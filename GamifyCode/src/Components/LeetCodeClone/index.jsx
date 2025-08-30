@@ -50,9 +50,7 @@ export default function LeetCodeClone() {
 
   return (
     <div className="flex h-screen bg-gray-900 text-white">
-      {/* Left Panel - Problem Description */}
       <div className="w-1/2 flex flex-col border-r border-gray-700">
-        {/* Problem Header */}
         <div className="p-4 border-b border-gray-700">
           <div className="flex items-center justify-between">
             <div className="flex items-center space-x-3">
@@ -72,7 +70,6 @@ export default function LeetCodeClone() {
           </div>
         </div>
 
-        {/* Tabs */}
         <div className="flex border-b border-gray-700">
           {['description', 'editorial', 'solutions', 'submissions'].map((tab) => (
             <button
@@ -89,7 +86,6 @@ export default function LeetCodeClone() {
           ))}
         </div>
 
-        {/* Content */}
         <div className="flex-1 p-4 overflow-y-auto">
           {activeTab === 'description' && (
             <div className="space-y-4">
@@ -137,9 +133,7 @@ export default function LeetCodeClone() {
         </div>
       </div>
 
-      {/* Right Panel - Code Editor */}
       <div className="w-1/2 flex flex-col">
-        {/* Editor Header */}
         <div className="p-4 border-b border-gray-700 flex items-center justify-between">
           <div className="flex items-center space-x-4">
             <select 
@@ -163,7 +157,6 @@ export default function LeetCodeClone() {
           </div>
         </div>
 
-        {/* Code Editor */}
         <div className="flex-1 relative">
           <textarea
             value={code}
@@ -174,7 +167,6 @@ export default function LeetCodeClone() {
           />
         </div>
 
-        {/* Action Buttons */}
         <div className="p-4 border-t border-gray-700 flex items-center justify-between">
           <div className="flex items-center space-x-2">
             <button
@@ -206,7 +198,6 @@ export default function LeetCodeClone() {
           </div>
         </div>
 
-        {/* Test Results */}
         {testResults && (
           <div className="border-t border-gray-700 max-h-48 overflow-y-auto">
             <div className="p-4">
